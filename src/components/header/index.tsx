@@ -64,7 +64,6 @@ export const Header: React.FC<RefineThemedLayoutV2HeaderProps> = ({
                 }}
               >
                 {[...(i18n.languages ?? [])].sort().map((lang: string) => (
-                  // @ts-ignore
                   <MenuItem
                     selected={currentLocale === lang}
                     key={lang}
